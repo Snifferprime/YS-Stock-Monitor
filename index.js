@@ -138,7 +138,7 @@ class Monitor {
 				.setThumbnail(productInfo.image ? productInfo.image : null)
 				.addField('Price', `$${productInfo.price}`, false)
 				.setTimestamp()
-				.setFooter('YS Stock Monitor');
+				.setFooter('Developed by @snifferprime');
 
 			variants.map((variant) => {
 				const stock = variant.availability === 15 ? '15+' : variant.availability.toString();
